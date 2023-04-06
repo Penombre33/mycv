@@ -1,0 +1,43 @@
+body {
+  background: url("img cours\221846712_2912055845701691_74400214433114326_n.jpg");
+  background: url("https://rare-gallery.com/thumbnail/1363018-Clean-wallpaper.jpg")
+    no-repeat center/cover;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-family: "Kanit", sans-serif;
+  background-color: rgb(0, 27, 48);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.colone {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  text-align: start;
+  background-position: -10px;
+  background: rgb(3, 79, 85);
+  font-size: 22px;
+  height: 55%;
+  width: 100%;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(181, 189, 187);
+}
+.circle-before::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  margin-right: 5px;
+}
+article {
+  color: rgb(255, 255, 255);
+  margin: 10px;
+}
+.titre {
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  border: 2px solid;
+}
