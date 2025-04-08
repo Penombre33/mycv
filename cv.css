@@ -1,43 +1,65 @@
 body {
-  background: url("img cours\221846712_2912055845701691_74400214433114326_n.jpg");
-  background: url("https://rare-gallery.com/thumbnail/1363018-Clean-wallpaper.jpg")
+  background: url("\fond.jpg");
+  background: url("https://images.unsplash.com/photo-1483982258113-b72862e6cff6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
     no-repeat center/cover;
   display: flex;
   margin: 0;
   padding: 0;
   font-family: "Kanit", sans-serif;
-  background-color: rgb(0, 27, 48);
+  background-color: #DDDDDD;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .colone {
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-  text-align: start;
-  background-position: -10px;
-  background: rgb(3, 79, 85);
-  font-size: 22px;
+  background-color:rgb(78, 74, 74)	; /* gris clair */
+  color:rgb(255, 255, 255); /* texte noir pour bien ressortir */
+  font-size: px;
   height: 55%;
   width: 100%;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-  color: rgb(255, 255, 255);
+  text-align: start;
   border: 2px solid rgb(181, 189, 187);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
+
 .circle-before::before {
   content: "";
   display: inline-block;
   width: 10px;
   height: 10px;
-  border-radius: 50%;
+  border-radius: 0%;
   background-color: black;
   margin-right: 5px;
 }
 article {
-  color: rgb(255, 255, 255);
+  color:rgb(255, 255, 255);
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
   margin: 10px;
+  font-family: "Kanit", sans-serif;
 }
 .titre {
   font-size: 30px;
   text-align: center;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   border: 2px solid;
+}
+
+p {
+  font-size: 18px; /* Ajustez selon vos besoins */
+  line-height: 1.5; /* Améliore la lisibilité */
+  margin: 10px 0; /* Espace autour des paragraphes */
+  color: rgb(255, 255, 255); /* Couleur du texte, ajustez si nécessaire */
+  text-shadow: none; /* Supprimez l'ombre si elle est floue */
+}
+.formations-info {
+  display: flex; /* Utilise Flexbox pour l'alignement */
+  justify-content: space-between; /* Espacement entre les sections */
+  margin: 20px 0; /* Espacement vertical autour du conteneur */
+}
+
+.formation {
+  margin-right: 20px; /* Ajoutez un espacement à droite pour la première section */
+}
+
+.info-plus {
+  transform: translateX(-300px); /* Déplace la section Info+ vers la gauche de 10 pixels */
 }
