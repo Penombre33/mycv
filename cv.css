@@ -15,7 +15,7 @@ body {
   color:rgb(255, 255, 255); /* texte noir pour bien ressortir */
   font-size: px;
   height: 55%;
-  width: 100%;
+  width: 99%;
   text-align: start;
   border: 2px solid rgb(181, 189, 187);
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
@@ -33,7 +33,7 @@ body {
 article {
   color:rgb(255, 255, 255);
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
-  margin: 10px;
+  margin: 30px;
   font-family: "Kanit", sans-serif;
 }
 .titre {
