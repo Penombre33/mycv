@@ -1,5 +1,4 @@
 body {
-  background: url("\fond.jpg");
   background: url("https://images.unsplash.com/photo-1483982258113-b72862e6cff6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
     no-repeat center/cover;
   display: flex;
@@ -11,14 +10,14 @@ body {
 }
 
 .colone {
-  background-color:rgb(78, 74, 74)	; /* gris clair */
-  color:rgb(255, 255, 255); /* texte noir pour bien ressortir */
-  font-size: px;
+  background-color: rgb(78, 74, 74);
+  color: white;
+  font-size: 16px; /* corrigé */
   height: 55%;
   width: 99%;
   text-align: start;
   border: 2px solid rgb(181, 189, 187);
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 1px 2px black;
 }
 
 .circle-before::before {
@@ -29,37 +28,73 @@ body {
   border-radius: 0%;
   background-color: black;
   margin-right: 5px;
+  text-shadow: 2px 1px 2px black;
+}
+.circle-before {
+  text-shadow: 2px 2px 2px black;
+  font-family: 'Verdana';
 }
 article {
-  color:rgb(255, 255, 255);
+  color: white;
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
   margin: 30px;
   font-family: "Kanit", sans-serif;
 }
+
 .titre {
   font-size: 30px;
   text-align: center;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   border: 2px solid;
+  text-shadow: 2px 2px 2px black;
 }
 
 p {
-  font-size: 18px; /* Ajustez selon vos besoins */
-  line-height: 1.5; /* Améliore la lisibilité */
-  margin: 10px 0; /* Espace autour des paragraphes */
-  color: rgb(255, 255, 255); /* Couleur du texte, ajustez si nécessaire */
-  text-shadow: none; /* Supprimez l'ombre si elle est floue */
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 10px 0;
+  color: white;
+  text-shadow: none;
+  
 }
+
 .formations-info {
-  display: flex; /* Utilise Flexbox pour l'alignement */
-  justify-content: space-between; /* Espacement entre les sections */
-  margin: 20px 0; /* Espacement vertical autour du conteneur */
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
 }
 
 .formation {
-  margin-right: 20px; /* Ajoutez un espacement à droite pour la première section */
+  margin-right: 20px;
 }
 
 .info-plus {
-  transform: translateX(-300px); /* Déplace la section Info+ vers la gauche de 10 pixels */
+  transform: translateX(-100px); /* réduit pour éviter les débordements */
+}
+
+/* Impression 1920x1080 */
+@page {
+  size: 1920px 1080px;
+  margin: 0;
+}
+
+@media print {
+  body {
+    width: 1920px;
+    height: 1080px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-shadow: none !important;
+  }
+
+  .img-wrapper img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  * {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+    text-shadow: none !important;
+  }
 }
